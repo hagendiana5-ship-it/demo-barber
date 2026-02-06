@@ -13,13 +13,17 @@
         theme: {
           extend: {
             fontFamily: { serif: ['Cinzel', 'serif'], sans: ['Montserrat', 'sans-serif'] },
-            colors: { gold: { 100: '#F9F1D8', 500: '#D4A536', 900: '#2B210B' } },
+            colors: { gold: { 100: '#F9F1D8', 500: '#D4A536', 900: '#2B210B' } }
           }
         }
       }
     </script>
+    <style>
+      .metallic-btn { background: linear-gradient(180deg, #F0DEAA 0%, #D4A536 50%, #AA842B 51%, #DDB856 100%); }
+      .glass-panel { background: rgba(20, 20, 20, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
 </head>
-<body>
+<body class="bg-stone-950 text-stone-100 font-sans antialiased">
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
 </body>
